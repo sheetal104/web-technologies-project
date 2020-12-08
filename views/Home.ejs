@@ -1,0 +1,168 @@
+<!--<h1> Home Page</h1>
+<p><ul>
+  <li><a href="/login">Login</a></li>
+  <li><a href="/register">Register</a></li>
+  <li><a href="/logout">Logout</a></li> 
+</ul></p>
+-->
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+    @import url('https://fonts.googleapis.com/css?family=Segoe UI');
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 700;
+  }
+  body {
+	background: linear-gradient(-45deg, #3397be, #74a9be, #f1f5f7);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background: rgb(32, 60, 97);
+  }
+  
+  header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  header nav {
+    color: rgb(255, 255, 255);
+  }
+  
+  header nav a {
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  
+  header nav a:last-child {
+    color: #fff;
+    background: #4779a1;
+    padding: 10px 20px;
+    margin-left: 15px;
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+  
+  header nav a:hover {
+    opacity: 0.8;
+  }
+  
+  #container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 20px;
+    height: 575px;
+  }
+  
+  #content-container {
+    position: absolute;
+    width: 30%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #content-container h1 {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 0.9em;
+    margin-bottom: 30px;
+    color: rgb(32, 60, 97);
+  }
+  
+  #content-container p {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    left: 25px;
+    line-height: 1.8em;
+  }
+
+  #img1, #img2, #img3 {
+    position: relative;
+    margin: 40px;
+  }
+
+  .tweet{
+    position: absolute;
+    margin-top: 600px;
+  }
+  .tweet h1{
+    font-size: 40px;
+    color: rgb(32, 60, 97);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .prodpod{
+    position: relative;
+    border-radius: 2px;
+    width: 50px;
+    height: 50px;
+  }
+  </style>
+  
+  
+  <html>
+    <header>
+      <div class="logo">
+        <img class="prodpod" src="./img/logo.png" alt="logo">
+        <h3>PRODPOD</h3>
+      </div>
+    
+      <nav>
+        <a href="http://localhost:3000">LOGIN</a>
+      </nav>
+    </header>
+    
+    <section id="container">
+      <div id="img1"><img src="./img/clock.png" alt="clock"></div>
+      <div id="img2"><img src="./img/post-it.png" alt="postit"></div>
+      <div id="img3"><img src="./img/to-do-list.png" alt="todo"></div>
+      <div id="content-container">
+        <h1>Productivity. Meets. Management.</h1>
+        <p>Welcome to Prodpod, your one place to manage all your work!
+        </p>
+      </div>
+      <div class="tweet">
+        <h1>TWEETS</h1>
+        <script src="./embed.js" type="text/javascript"></script>
+        <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+        <ul class="juicer-feed" data-feed-id="pesuniversity" data-per="20"></ul>
+        </div>
+    </section>
+  </html>

@@ -1,0 +1,12 @@
+.newProject{
+    cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-color: rgb(23, 51, 110);
+  color: #fff;
+  position: relative;
+  left: 46%;
+  padding: 15px;
+  border-radius: 5px;
+}
