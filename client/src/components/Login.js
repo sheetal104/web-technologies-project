@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios';
+import Navbar from './Navbar'
 
 export default function Login({setIsLogin}) {
     const [user, setUser] = useState({name: '',email: '',password: '' })
@@ -49,6 +50,7 @@ export default function Login({setIsLogin}) {
 
     return (
        <section className="login-page">
+           <Navbar />
            <div className="login create-note">
                 <h2>Login</h2>
                 <form onSubmit={loginSubmit}>

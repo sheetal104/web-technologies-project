@@ -7,11 +7,37 @@ body {
   font-family: "Calibri", "Roboto", sans-serif;
 }
 
+
+
+.logo{
+  max-width: 1920px;
+  min-height: 130px;
+  background-color:  rgb(32, 60, 97);
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.image{
+  
+  margin-left: 43%;
+}
+.prodpod{
+  color: #fff;
+  font-size: 30px;
+
+}
+
 .chat_window {
   position: absolute;
   width: calc(100% - 20px);
   max-width: 800px;
   height: 500px;
+  margin-top: 50px;
   border-radius: 10px;
   background-color: #fff;
   left: 50%;

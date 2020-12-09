@@ -1,0 +1,24 @@
+.logoNav{
+    max-width: 1920px;
+    min-height: 130px;
+    background-color:  rgb(32, 60, 97);
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.imageNav{
+    
+    margin-left: 42%;
+}
+.prodpodNav{
+    color: #fff;
+    font-size: 30px;
+    top: 2px;
+    padding: 20px;
+  
+}

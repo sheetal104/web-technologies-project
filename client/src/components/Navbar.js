@@ -7,9 +7,9 @@ export default function Nav({setIsLogin}) {
 
     return (
         <header>
-            <div className="logo">
-            <img className="image" src={Logo} alt="logo"></img>
-                <h2 className="prodpod">PRODPOD</h2>
+            <div className="logoNav">
+            <img className="imageNav" src={Logo} alt="logo"></img>
+                <h2 className="prodpodNav">PRODPOD</h2>
             
                 </div>
         </header>
